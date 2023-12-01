@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Better Call Saul Law Firm</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- Your webpage content goes here -->
+
+    <header>
+      <img
+        src="./assets/images/Better_Call_Saul_logo.webp"
+        alt="Better Call Saul Logo"
+        class="logo"
+      />
+      <div class="topnav" id="myTopnav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#blog">Blog</a>
+        <a href="#testiomonial">Testimonial</a>
+        <a href="#contact">Contact</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    </header>
+    <div class="watermark-bg">
+      <div class="home-section">
+        <h1><i>Welcome to Better Call Saul</i></h1>
+        <img src="./assets/images/lawyer.webp" />
+        <p class="welcome-message"><b>Your Trusted Legal Partner</b></p>
+        <p>
+          <b
+            >Facing Legal Challenges? We're here to help. Contact us for expert
+            legal advice.</b
+          >
+        </p>
+        <a href="#contact" class="cta-button">Contact Us Today</a>
+      </div>
+
+      <!-- Rest of your webpage content goes here -->
+    </div>
+  </body>
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+  </script>
+</html>

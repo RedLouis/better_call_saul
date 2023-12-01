@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Better Call Saul Contact Form</title>
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <body>
+    <header>
+      <img
+        src="../assets/images/Better_Call_Saul_logo.webp"
+        alt="Better Call Saul Logo"
+        class="logo"
+      />
+
+      <div class="topnav" id="myTopnav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#blog">Blog</a>
+        <a href="#testiomonial">Testimonial</a>
+        <a href="#contact">Contact</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    </header>
+    <main>
+      <div class="contact-info">
+        <h1><i>Get In Touch Better Call Saul - Your Legal Allies</i></h1>
+        <img src="../assets/images/logo.png" />
+        <!-- Added description -->
+        <p>
+          If you want a better life use our <b>service</b>, we
+          <i>eliminate</i> the problem for <u>anyone</u>!
+        </p>
+
+        <p>Call us or use the form if you want:</p>
+        <ul>
+          <li>More Power</li>
+          <li>Less Trouble</li>
+          <li>More Succes</li>
+        </ul>
+
+        <h2 class="red left">Contact Information</h2>
+
+        <p>
+          <strong>Office Address:</strong><br />
+          123 Legal Street, Suite 456<br />
+          Lawyer City, LC 78901<br />
+          USA
+        </p>
+
+        <p><strong>Phone:</strong> +1 (555) 123-4567</p>
+
+        <p><strong>Email:</strong> info@bettercallsaulfirm.com</p>
+
+        <p>
+          <strong>Follow Us:</strong><br />
+          <a href="https://www.facebook.com/BetterCallSaulAMC" target="_blank"
+            >Facebook</a
+          ><br />
+          <a href="https://twitter.com/bettercallsaul" target="_blank"
+            >Twitter</a
+          ><br />
+          <a href="https://www.instagram.com/bettercallsaulamc" target="_blank"
+            >Instagram</a
+          >
+        </p>
+      </div>
+
+      <h2 class="red">Contact Form</h2>
+      <form>
+        <!-- Dropdown menu for selecting issue -->
+        <label for="problem">Issue</label>
+        <select id="problem" name="problem">
+          <option value="work">Work related</option>
+          <option value="criminal">Criminal defense</option>
+          <option value="family">Family law</option>
+          <option value="personal">Personal injury</option>
+          <option value="bankruptcy">Bankruptcy</option>
+          <option value="other">Other</option></select
+        ><br />
+
+        <!-- Dropdown menu for selecting lawyer -->
+        <label for="lawyer">Desired contact person</label>
+        <select id="color" name="lawyer">
+          <option value="jimmy">James Morgan "Jimmy" McGill</option>
+          <option value="saul" selected>Saul Goodman</option>
+          <option value="bob">Bob Odenkirk</option></select
+        ><br />
+        <!-- Text input for the user's name -->
+        <label for="name">Name:</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          required
+          placeholder="Enter your name please"
+        /><br />
+
+        <!-- Email input for the user's email address -->
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="youremail@services.com"
+        /><br />
+
+        <label for="telNo">Phone:</label>
+        <input
+          id="telNo"
+          name="telNo"
+          type="tel"
+          placeholder="Enter your phonenumber here"
+        />
+        <br />
+
+        <!-- Text area for short message -->
+        <label for="message">Message:</label>
+        <textarea
+          id="message"
+          name="message"
+          placeholder="Enter your message here <not required>"
+          rows="4"
+          cols="50"
+        ></textarea
+        ><br />
+
+        <!-- Submit button for form submission -->
+        <button onclick="alert('This form is for educational purpose only!')">
+          Submit
+        </button>
+      </form>
+    </main>
+    <footer style="background-color: yellow">
+      <p>made with <3</p>
+    </footer>
+  </body>
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+  </script>
+</html>
