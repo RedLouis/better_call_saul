@@ -9,6 +9,15 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        document
+          .getElementById("contactButton")
+          .addEventListener("click", function () {
+            window.location.href = "./public/contact.html";
+          });
+      });
+    </script>
   </head>
 
   <body>
@@ -21,11 +30,11 @@
         class="logo"
       />
       <div class="topnav" id="myTopnav">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#blog">Blog</a>
-        <a href="#testiomonial">Testimonial</a>
+        <a href="./index.html">Home</a>
+        <a href="./public/about.html">About</a>
+        <a href="./public/services.html">Services</a>
+        <a href="./public/blog.html">Blog</a>
+        <a href="./public/testimonial.html">Testimonial</a>
         <a href="./public/contact.html">Contact</a>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
           <i class="fa fa-bars"></i>
@@ -35,15 +44,17 @@
     <div class="watermark-bg">
       <div class="home-section">
         <h1><i>Welcome to Better Call Saul</i></h1>
-        <img src="./assets/images/lawyer.webp" />
+        <img src="./assets/images/lawyer.webp" alt="lawyer" />
         <p class="welcome-message"><b>Your Trusted Legal Partner</b></p>
-        <p>
+        <p class="bottom">
           <b
             >Facing Legal Challenges? We're here to help. Contact us for expert
             legal advice.</b
           >
         </p>
-        <a href="./public/contact.html" class="cta-button">Contact Us Today</a>
+        <div class="button-container">
+          <button id="contactButton">Contact Us Today</button>
+        </div>
       </div>
 
       <!-- Rest of your webpage content goes here -->
